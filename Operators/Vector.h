@@ -10,6 +10,7 @@ public:
 	virtual ~Vector3D();
 
 	//Operators
+
 	Vector3D operator+(const Vector3D& second) const;
 	Vector3D operator-(const Vector3D& second) const;
 	Vector3D operator*(const Vector3D& second) const;

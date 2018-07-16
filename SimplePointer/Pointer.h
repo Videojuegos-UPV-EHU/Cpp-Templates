@@ -22,6 +22,10 @@ public:
 	{
 		*m_pValue = value;
 	}
+	ObjectClass Get()
+	{
+		return *m_pValue;
+	}
 	void Print()
 	{
 		cout << *m_pValue << "\n";
