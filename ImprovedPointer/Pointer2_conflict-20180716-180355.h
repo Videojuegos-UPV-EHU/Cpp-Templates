@@ -46,6 +46,10 @@ public:
 	{
 		*m_pObject = value;
 	}
+	ObjectClass Get()
+	{
+		return *m_pObject;
+	}
 	void Print()
 	{
 		cout << *m_pObject << "\n";

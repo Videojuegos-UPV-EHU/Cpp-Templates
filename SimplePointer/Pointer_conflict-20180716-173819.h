@@ -6,24 +6,28 @@ using namespace std;
 template <typename ObjectClass>
 class Pointer
 {
-	ObjectClass* m_pObject;
+	ObjectClass* m_pValue;
 public:
 
 	Pointer()
 	{
-		m_pObject = new ObjectClass();
+		m_pValue = new ObjectClass();
 	}
 	~Pointer()
 	{
 		cout << "Object destroyed\n";
-		delete m_pObject;
+		delete m_pValue;
 	}
 	void Set(ObjectClass value)
 	{
-		*m_pObject = value;
+		*m_pValue = value;
+	}
+	ObjectClass Get()
+	{
+		return *m_pValue;
 	}
 	void Print()
 	{
-		cout << *m_pObject << "\n";
+		cout << *m_pValue << "\n";
 	}
 };

@@ -33,7 +33,7 @@ public:
 
 	T* Get(int i)
 	{
-		if (i >= m_numObjects) return nullptr;
+		if (i >= m_numObjects || i<0) return nullptr;
 
 		return m_array[i];
 	}
